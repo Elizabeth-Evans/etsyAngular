@@ -2,9 +2,9 @@
 <div><a href = "/#/cart"><button type="button"  class="btn btn-lg btn-primary">Go to Cart</button></a></div>
 </div>
 <h2>Check out the products...</h2>
+<div><input type="text" name="name" ng-model="search" placeholder="search"></div>
 
-
-<div ng-repeat="listing in listings" class="col-md-6">
+<div ng-repeat="listing in listings | filter:search" class="col-md-6">
 <img ng-src="{{listing.MainImage.url_170x135}}" charset="utf-8"/>
 <a href = "/#/productPage/{{listing.listing_id}}"><button type="button" class="btn btn-info">Info</button></a>
 <button type="button" ng-class="{'font-yellow': listing.isClicked }" ng-click="addToCart(listing); itemClick(listing)" class="btn btn-success">Add to Cart</button>

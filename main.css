@@ -46,3 +46,6 @@ h1 , h2{
 h4{
   color: lightgrey;
 }
+input{
+  text-align: left;
+}
