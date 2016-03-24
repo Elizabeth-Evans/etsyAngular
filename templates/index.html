@@ -3,7 +3,7 @@
 </div>
 <h2>Check out the products...</h2>
 <div><input type="text" name="name" ng-model="search" placeholder="   search for something amazing . . . . . ."></div>
-<div ng-repeat="listing in listings | filter:{description:search}" "listing in listings | filter:{price:search}" class="col-md-6">
+<div ng-repeat="listing in listings | filter:{description:search}" "listing in listings | filter:{materials:search}" class="col-md-6">
 
 
 <img ng-src="{{listing.MainImage.url_170x135}}" charset="utf-8"/>
