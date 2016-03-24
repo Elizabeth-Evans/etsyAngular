@@ -1,6 +1,6 @@
 angular
   .module('etsyAngular')
-  .controller('ProductPageController', function($scope,$location,ApiEtsyService,$routeParams) {
+  .controller('ProductPageController', function($scope,$location,ApiEtsyService,TinyService,$routeParams) {
 
 
     ApiEtsyService.showProduct($routeParams.id)
@@ -12,8 +12,7 @@ angular
     $scope.addToCart = function(post){
       TinyService.newWangulCreation(post)
         .then(function(data) {
-          console.log("UAU",data)
-          $location.path('/');
+          console.log("UAU",data);
         })
     }
 })

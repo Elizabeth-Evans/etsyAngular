@@ -10,7 +10,10 @@
 <p> Title: {{listing.title}} </p>
 <p> Description: {{listing.description}} </p>
 <p> Price: $ {{listing.price}} </p>
+<p> Materials Used: {{ listing.materials.toString('') || "no materials listed" }} </p>
+<p> Find on Etsy: <a href = "{{listing.url}}">{{listing.url}}  </a> </p>
 </div>
+
 
 <div class="bottom">
 <a href = "/#/"><button type="button" class="btn btn-lg btn-warning">Back</button></a>

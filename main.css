@@ -40,3 +40,9 @@ button{
 .bottom{
   margin-left: 45%;
 }
+h1 , h2{
+  color: grey;
+}
+h4{
+  color: lightgrey;
+}
