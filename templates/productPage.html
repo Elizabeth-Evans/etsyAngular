@@ -1,0 +1,19 @@
+<div class="title">
+<a href = "/#/"><button type="button" class="btn btn-lg btn-warning">Back</button></a>
+<a href = "/#/cart"><button type="button" class="btn btn-lg btn-primary">Go to Cart</button></a>
+</div>
+<h2>An Etsy Product</h2>
+
+
+<div class='product'>
+<img ng-src="{{listing.MainImage.url_fullxfull}}" charset="utf-8"/>
+<p> Title: {{listing.title}} </p>
+<p> Description: {{listing.description}} </p>
+<p> Price: $ {{listing.price}} </p>
+</div>
+
+<div class="bottom">
+<a href = "/#/"><button type="button" class="btn btn-lg btn-warning">Back</button></a>
+<button type="button" ng-click="addToCart(listing)" class="btn btn-lg btn-success">Add to Cart</button>
+<a href = "/#/cart"><button type="button" class="btn btn-lg btn-primary">Go to Cart</button></a>
+</div>

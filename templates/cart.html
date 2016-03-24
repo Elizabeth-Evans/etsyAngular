@@ -1,0 +1,15 @@
+<div class="title">
+<a href = "/#/"><button type="button" class="btn btn-lg btn-warning">Back</button></a>
+</div>
+<h2>Shopping Cart</h2>
+<h4>Your Subtotal: $ {{subTotal}}</h4>
+
+
+<div ng-repeat="listing in listings" class="col-md-6">
+<img ng-src="{{listing.MainImage.url_170x135}}" charset="utf-8"/>
+<p> Title: {{listing.title}} </p>
+<p> Price: $ {{listing.price}} </p>
+
+
+<button type="button" ng-click="deleteWangul(listing)" class="btn btn-danger">Delete</button>
+</div>
